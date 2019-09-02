@@ -42,6 +42,7 @@ public class zkClient {
     }
 
 
+
     private static void getClient() throws IOException {
         zooKeeper = new ZooKeeper(connect, timeOut, new Watcher() {
             public void process(WatchedEvent watchedEvent) {
